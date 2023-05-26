@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ColorMyViewsActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="TextView 1"
+        android:gravity="center"
+        android:background="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TextView 2"
+        android:gravity="center"
+        android:background="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@id/TextView3"
+        app:layout_constraintBottom_toBottomOf="@id/TextView5"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="TextView 3"
+        android:gravity="center"
+        android:background="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintStart_toEndOf="@id/TextView2"/>
+
+    <TextView
+        android:id="@+id/TextView4"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="TextView 4"
+        android:gravity="center"
+        android:background="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/TextView3"
+        app:layout_constraintTop_toBottomOf="@id/TextView3"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/TextView5"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="TextView 5"
+        android:gravity="center"
+        android:background="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/TextView4"
+        app:layout_constraintTop_toBottomOf="@id/TextView4"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btYellow" />
+
+    <Button
+        android:id="@+id/btBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btYellow"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btRed"
+        app:layout_constraintStart_toEndOf="@+id/btBlue" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
